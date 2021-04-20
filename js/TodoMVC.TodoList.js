@@ -40,7 +40,7 @@ TodoMVC.module('TodoList', function(TodoList, App, Backbone, Marionette, $, _) {
             }));
         },
         toggleFooter: function() {
-            App.footer.$el.toggle(this.todoList.length);
+            App.footer.$el.toggle(true);
         },
         // 완료된 Todo 항목 대비 활성화된 항목을 보여주기 위해 경로를 처리한다.
         filterItems: function(filter) {

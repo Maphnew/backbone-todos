@@ -93,9 +93,7 @@ TodoMVC.module('TodoList.Views', function(Views, App, Backbone, Marionette, $, _
         },
         onToggleAllClick: function(e) {
             var isChecked = e.currentTarget.checked;
-            console.log(e.currentTarget)
             this.collection.each(function(todo) {
-                console.log(todo)
                 todo.save({'completed': isChecked});
             });
         }
